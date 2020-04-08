@@ -23,8 +23,7 @@ install:
     - rustup component add clippy
 
 script:
-    - cargo clippy --target wasm32-unknown-unknown -- -D warnings
-    - bin/build.sh
+    - bin/test.sh
 
 cache:
     cargo: true
